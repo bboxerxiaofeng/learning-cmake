@@ -5,7 +5,7 @@ add_executable(curltest main.c)
 #include_directories(/usr/local/include)
 #target_link_libraries(curltest curl)
 
-find_package(curl)
+find_package(CURL REQUIRED)
 
 if(CURL_FOUND)
   include_directories(${CURL_INCLUDE_DIR})
